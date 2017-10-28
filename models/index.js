@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.set('debug', true);
+//mongoose.set('debug', true);
 const options = {
     useMongoClient: true
 }
