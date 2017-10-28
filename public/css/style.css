@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+body {
+    background: #e2e2e2;   
+    margin: 0;
+    font-family: 'Montserrat', 'Segoe UI', 'Helvetica','sans-serif';
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    padding: 5vh 2vw 2vh 2vw;
+    margin-bottom: 5vh;
+    width: 100%;
+}
+h1 {
+    font-weight: 300;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    color: #444444
+}
+header > h1 span {
+    font-weight: 700;
+}
+header > p:first-of-type {
+    margin-top: 10vh;
+}
+header > p {
+    font-size: 1.5rem;
+    margin: 5vh auto;
+    color: #606060;
+    letter-spacing: 1px;
+}
+header > p:nth-of-type(2) {
+    margin-bottom: 10vh;
+}
+input {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    max-width: 100%;
+    font-family: 'Montserrat', 'Segoe UI', 'Helvetica','sans-serif';
+    font-weight: 300;
+    font-size: 2.5rem;
+    padding: 1vh 1vw;
+    padding-right: 0;
+    background: #e2e2e2;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #606060;
+    text-align: center;
+}
+section ul {
+    text-align: center;
+    list-style: none;
+}
+ul > li.todo {
+    font-size: 2rem;  
+    padding: 4vh 0;  
+}
+ul > li.todo:hover span {
+    background: #cccccc;
+}
+ul > li.todo:hover button {
+    opacity: 1;
+}
+ul > li > span {
+    transition: background .4s;
+    padding: 3vh 6vw;
+    border-radius: 10px;
+}
+li.todo > button {
+    opacity: 0;
+    transition: opacity .4s;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #e2e2e2;
+    color: #ef6653;
+    font-family: 'Fredoka One', 'Montserrat', 'Helvetica', 'sans-serif';
+}
+.completed {
+    text-decoration: line-through;
+    color: #a8a8a8;
+}
